@@ -5,7 +5,10 @@
 // Questa funzione è eseguita sia sul server che sul client
 // In document.tsx invece il codice è eseguito solo sul server
 
-import '../styles/globals.css'
+// Questo file serve anche per il css globale:
+import '../styles/main.css'
+// è considerato come un import globale e si può fare solo in questo file,
+// negli altri non funziona
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
